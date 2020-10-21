@@ -9,7 +9,6 @@ module.exports = bot => {
         if (room) {
             const topic = await room.topic()
             if(topic === '程序员& 8杯水') {
-                
                 // if(contact.name() === '烦人的陈宏銮') {
                 //     await message.say('銮兄，灰化肥挥发会发黑')
                 // } else {
