@@ -14,11 +14,6 @@ module.exports = function (bot) {
     const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/water.jpeg')
     room.say(fileBox)
   })
-  // 水群提醒下班
-  schedule.scheduleJob('59 28 17 * * *', async () => {
-    const room = await bot.Room.find({ topic: '程序员& 8杯水' })
-    room.say('下班啦')
-  })
 
   // 提醒自己下午4：30抢券
   schedule.scheduleJob('59 28 16 * * *', async () => {
