@@ -1,5 +1,5 @@
 module.exports = bot => {
-    return async function(message) {
+    return async function (message) {
         const contact = message.from() // 发消息人
         const content = message.text().trim() // 消息内容
         const room = message.room() // 是否是群消息
@@ -8,7 +8,7 @@ module.exports = bot => {
         const isSelf = message.self()
         if (room) {
             const topic = await room.topic()
-            if(topic === '程序员& 8杯水') {
+            if (topic === '程序员& 8杯水') {
                 // if(contact.name() === '烦人的陈宏銮') {
                 //     await message.say('銮兄，灰化肥挥发会发黑')
                 // } else {
