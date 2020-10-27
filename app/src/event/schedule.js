@@ -6,12 +6,12 @@ module.exports = function (bot) {
   // 提醒水群喝水
   const atime = schedule.scheduleJob('59 28 9-11 * * *', async () => {
     const room = await bot.Room.find({ topic: '程序员& 8杯水' })
-    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/water.jpeg')
+    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
     room.say(fileBox)
   })
   const p1time = schedule.scheduleJob('59 28 14-16 * * *', async () => {
     const room = await bot.Room.find({ topic: '程序员& 8杯水' })
-    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/water.jpeg')
+    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
     room.say(fileBox)
   })
 
@@ -26,4 +26,8 @@ module.exports = function (bot) {
   //   const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/water.jpeg')
   //   room.say(fileBox)
   // })
+}
+
+exports.createSchedule = function ({ time, type, message }) {
+  // const
 }
