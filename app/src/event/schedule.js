@@ -4,12 +4,23 @@ const { FileBox } = require('wechaty')
 
 module.exports = function (bot) {
   // 提醒水群喝水
-  const atime = schedule.scheduleJob('59 28 9-11 * * *', async () => {
+  const atime = schedule.scheduleJob('59 28 9 * * *', async () => {
     const room = await bot.Room.find({ topic: '程序员& 8杯水' })
     const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
     room.say(fileBox)
   })
-  const p1time = schedule.scheduleJob('59 28 14-16 * * *', async () => {
+  const atime = schedule.scheduleJob('59 28 11 * * *', async () => {
+    const room = await bot.Room.find({ topic: '程序员& 8杯水' })
+    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
+    room.say(fileBox)
+  })
+  const p1time = schedule.scheduleJob('59 28 14 * * *', async () => {
+    const room = await bot.Room.find({ topic: '程序员& 8杯水' })
+    const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
+    room.say(fileBox)
+  })
+
+  const p1time = schedule.scheduleJob('59 28 16 * * *', async () => {
     const room = await bot.Room.find({ topic: '程序员& 8杯水' })
     const fileBox = FileBox.fromUrl('http://workout.img.ajinse.cn/let%27swater.jpeg')
     room.say(fileBox)
@@ -29,5 +40,4 @@ module.exports = function (bot) {
 }
 
 exports.createSchedule = function ({ time, type, message }) {
-  // const
 }
