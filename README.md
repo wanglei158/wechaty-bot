@@ -8,3 +8,10 @@
 > 实现：使用`nodejs`作为后端，`node-schedule`作为定时任务模块支持，`qrcode-terminal`生成登录二维码
 
 > 后期：目前有一个管理系统， 希望向机器人发送指定格式的信息，由机器人完成后台管理的一些操作，减少
+
+## 安装依赖 && 启动
+```shell
+cd app/
+npm i 
+npm start
+```
